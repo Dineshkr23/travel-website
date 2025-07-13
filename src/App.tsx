@@ -8,7 +8,7 @@ import { lazy, Suspense } from "react";
 import Index from "./pages/Index";
 import FlightResults from "./pages/FlightResults";
 import NotFound from "./pages/NotFound";
-import PerformanceMonitor from "./components/PerformanceMonitor";
+
 
 // Lazy load pages for better performance
 const TravelInsurance = lazy(() => import("./pages/TravelInsurance"));
@@ -49,7 +49,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
-        <PerformanceMonitor />
+
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

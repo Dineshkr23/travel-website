@@ -85,7 +85,6 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Quick Links</h3>
             <ul className="space-y-3 text-gray-300">
               <li><Link to="/" className="hover:text-white transition-all duration-300 hover:translate-x-1 inline-block">Flight Search</Link></li>
-              <li><Link to="/flights" className="hover:text-white transition-all duration-300 hover:translate-x-1 inline-block">Flight Results</Link></li>
               <li><Link to="/insurance" className="hover:text-white transition-all duration-300 hover:translate-x-1 inline-block">Travel Insurance</Link></li>
               <li><Link to="/documents" className="hover:text-white transition-all duration-300 hover:translate-x-1 inline-block">Travel Documents</Link></li>
               <li><Link to="/reviews" className="hover:text-white transition-all duration-300 hover:translate-x-1 inline-block">Reviews</Link></li>

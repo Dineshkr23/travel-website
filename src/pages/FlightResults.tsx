@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { ArrowLeft, Plane, Clock, DollarSign, Zap, Phone, Users, Calendar, Search, Filter } from "lucide-react";
+import { ArrowLeft, Plane, Clock, DollarSign, Zap, Phone, Users, Calendar, Search, Filter, Star, TrendingUp, Zap as Lightning } from "lucide-react";
 import { Link } from "react-router-dom";
 import SearchableAirportSelect from "@/components/SearchableAirportSelect";
 import { Calendar as CalendarComponent } from "@/components/ui/calendar";
@@ -386,13 +386,16 @@ const FlightResults = () => {
             <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-6 mb-8 border border-white/20 shadow-xl">
               <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
                 <TabsList className="grid w-full grid-cols-3 bg-gray-100 p-1 rounded-2xl">
-                  <TabsTrigger value="recommended" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">
+                  <TabsTrigger value="recommended" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm flex items-center gap-2">
+                    <Star className="w-4 h-4" />
                     Recommended
                   </TabsTrigger>
-                  <TabsTrigger value="cheapest" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">
+                  <TabsTrigger value="cheapest" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm flex items-center gap-2">
+                    <DollarSign className="w-4 h-4" />
                     Cheapest
                   </TabsTrigger>
-                  <TabsTrigger value="fastest" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm">
+                  <TabsTrigger value="fastest" className="rounded-xl data-[state=active]:bg-white data-[state=active]:shadow-sm flex items-center gap-2">
+                    <Lightning className="w-4 h-4" />
                     Fastest
                   </TabsTrigger>
                 </TabsList>
